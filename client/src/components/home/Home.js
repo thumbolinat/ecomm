@@ -8,7 +8,7 @@ const Home = () => {
    
     return (
         <Layout
-            title="Home"
+            title="Marakesh-North"
             description="Welcome to Marakesh-North"
             className="container-fluid"
         >

@@ -5,8 +5,8 @@ import { login, authenticate, isAuthenticated } from "../auth";
 
 const Login = () => {
     const [values, setValues] = useState({
-        email: "ryan@gmail.com",
-        password: "rrrrrr9",
+        email: "Email",
+        password: "",
         error: "",
         loading: false,
         redirectToReferrer: false
@@ -95,7 +95,7 @@ const Login = () => {
     return (
         <Layout
             title="Login"
-            description="Login to Marekesh-North"
+            description="Login to enter Marekesh-North"
             className="container col-md-8 offset-md-2"
         >
             {showLoading()}
