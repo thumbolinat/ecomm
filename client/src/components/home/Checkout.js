@@ -52,7 +52,7 @@ const Checkout = ({ products }) => {
         return isAuthenticated() ? (
             <div>{showDropIn()}</div>
         ) : (
-            <Link to="/signin">
+            <Link to="/login">
                 <button className="btn btn-primary">Sign in to checkout</button>
             </Link>
         );

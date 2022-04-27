@@ -76,10 +76,10 @@ const Menu = ({ history }) => (
                     <li className="nav-item">
                         <Link
                             className="nav-link"
-                            style={isActive(history, "/signin")}
-                            to="/signin"
+                            style={isActive(history, "/login")}
+                            to="/login"
                         >
-                            Signin
+                            Login
                         </Link>
                     </li>
 

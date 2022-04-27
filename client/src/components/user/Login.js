@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import Layout from "../home/Layout";
-import { signin, authenticate, isAuthenticated } from "../auth";
+import { login, authenticate, isAuthenticated } from "../auth";
 
-const Signin = () => {
+const Login = () => {
     const [values, setValues] = useState({
         email: "ryan@gmail.com",
         password: "rrrrrr9",
@@ -22,7 +22,7 @@ const Signin = () => {
     const clickSubmit = event => {
         event.preventDefault();
         setValues({ ...values, error: false, loading: true });
-        signin({ email, password }).then(data => {
+        login({ email, password }).then(data => {
             if (data.error) {
                 setValues({ ...values, error: data.error, loading: false });
             } else {
@@ -94,8 +94,8 @@ const Signin = () => {
 
     return (
         <Layout
-            title="Signin"
-            description="Signin to Node React E-commerce App"
+            title="Login"
+            description="Login to Marekesh-North"
             className="container col-md-8 offset-md-2"
         >
             {showLoading()}
@@ -106,4 +106,4 @@ const Signin = () => {
     );
 };
 
-export default Signin;
+export default Login;

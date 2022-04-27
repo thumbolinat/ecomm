@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Signup from "./components/user/Signup";
-import Signin from "./components/user/Signin";
+import Login from "./components/user/Login";
 import Home from "./components/home/Home";
 import PrivateRoute from "./components/auth/PrivateRoute";
 import Dashboard from "./components/user/UserDashboard";
@@ -23,7 +23,7 @@ const Routes = () => {
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/shop" exact component={Shop} />
-                <Route path="/signin" exact component={Signin} />
+                <Route path="/login" exact component={Login} />
                 <Route path="/signup" exact component={Signup} />
                 <PrivateRoute
                     path="/user/dashboard"

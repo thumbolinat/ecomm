@@ -17,8 +17,8 @@ export const signup = user => {
         });
 };
 
-export const signin = user => {
-    return fetch(`${API}/signin`, {
+export const login = user => {
+    return fetch(`${API}/login`, {
         method: "POST",
         headers: {
             Accept: "application/json",
