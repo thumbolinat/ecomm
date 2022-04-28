@@ -9,7 +9,6 @@ const AddCategory = () => {
     const [error, setError] = useState(false);
     const [success, setSuccess] = useState(false);
 
-    // destructure user and token from localstorage
     const { user, token } = isAuthenticated();
 
     const handleChange = e => {
@@ -21,7 +20,6 @@ const AddCategory = () => {
         e.preventDefault();
         setError("");
         setSuccess(false);
-        // make request to api to create category
         createCategory(user._id, token, { name }).then(data => {
             if (data.error) {
                 setError(data.error);

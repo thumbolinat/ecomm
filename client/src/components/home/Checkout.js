@@ -78,8 +78,6 @@ const Checkout = ({ products }) => {
                 processPayment(userId, token, paymentData)
                     .then(response => {
                         console.log(response);
-                        // empty cart
-                        // create order
 
                         const createOrderData = {
                             products: products,
@@ -161,7 +159,7 @@ const Checkout = ({ products }) => {
             className="alert alert-info"
             style={{ display: success ? "" : "none" }}
         >
-            Thanks! Your payment was successful!
+            Thank you! Payment Successful!
         </div>
     );
 

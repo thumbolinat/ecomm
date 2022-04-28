@@ -42,7 +42,6 @@ const UpdateProduct = ({ match }) => {
             if (data.error) {
                 setValues({ ...values, error: data.error });
             } else {
-                // populate the state
                 setValues({
                     ...values,
                     name: data.name,
@@ -53,13 +52,11 @@ const UpdateProduct = ({ match }) => {
                     quantity: data.quantity,
                     formData: new FormData()
                 });
-                // load categories
                 initCategories();
             }
         });
     };
 
-    // load categories and set form data
     const initCategories = () => {
         getCategories().then(data => {
             if (data.error) {

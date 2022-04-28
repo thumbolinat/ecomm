@@ -9,7 +9,7 @@ router.post("/products/by/search", listBySearch);
 router.get("/products/categories", listCategories);
 router.get("/product/:productId", scan);
 router.post("/product/post/:userId", requireLogin, isAuth, isAdmin, post);
-router.post("/products/search", listSearch);
+router.get("/products/search", listSearch);
 router.delete("/product/:productId/:userId", requireLogin, isAdmin, isAuth, remove);
 router.put("/product/:productId/:userId", requireLogin, isAdmin, isAuth, update);
 router.get("/product/pic/:productId", pic);
