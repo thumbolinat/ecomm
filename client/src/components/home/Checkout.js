@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getProducts, getBraintreeClientToken, processPayment, createOrder } from './apiHome';
+import { getBraintreeClientToken, processPayment, createOrder } from './apiHome';
 import { emptyCart } from './cartHelpers';
 import { isAuthenticated } from '../auth';
 import { Link } from 'react-router-dom';
