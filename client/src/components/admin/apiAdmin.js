@@ -1,7 +1,7 @@
 import { API } from "../../config";
 
 export const createCategory = (userId, token, category) => {
-    return fetch(`${API}/category/create/${userId}`, {
+    return fetch(`${API}/category/post/${userId}`, {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -19,7 +19,7 @@ export const createCategory = (userId, token, category) => {
 };
 
 export const createProduct = (userId, token, product) => {
-    return fetch(`${API}/product/create/${userId}`, {
+    return fetch(`${API}/product/post/${userId}`, {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -88,14 +88,6 @@ export const updateOrderStatus = (userId, token, orderId, status) => {
         })
         .catch(err => console.log(err));
 };
-
-/**
- * to perform crud on product
- * get all products
- * get a single product
- * update single product
- * delete single product
- */
 
 export const getProducts = () => {
     return fetch(`${API}/products?limit=undefined`, {

@@ -184,7 +184,7 @@ const AddProduct = () => {
             className="alert alert-info"
             style={{ display: createdProduct ? "" : "none" }}
         >
-            <h2>{`${createdProduct}`} is created!</h2>
+            <h2>{`${createdProduct}`} Created Successfully!</h2>
         </div>
     );
 
@@ -197,8 +197,8 @@ const AddProduct = () => {
 
     return (
         <Layout
-            title="Add a new product"
-            description={`G'day ${user.name}, ready to add a new product?`}
+            title="Add new product"
+            description={`Hello ${user.name}!`}
         >
             <div className="row">
                 <div className="col-md-8 offset-md-2">

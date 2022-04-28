@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "./Layout";
-import { read, listRelated } from "./apiHome";
+import { read } from "./apiHome";
 import Card from "./Card";
 
 const Product = props => {
@@ -14,14 +14,6 @@ const Product = props => {
                 setError(data.error);
             } else {
                 setProduct(data);
-                // fetch related products
-                listRelated(data._id).then(data => {
-                    if (data.error) {
-                        setError(data.error);
-                    } else {
-                        setRelatedProduct(data);
-                    }
-                });
             }
         });
     };
@@ -48,14 +40,7 @@ const Product = props => {
                     )}
                 </div>
 
-                <div className="col-4">
-                    <h4>Related products</h4>
-                    {relatedProduct.map((p, i) => (
-                        <div className="mb-3">
-                            <Card key={i} product={p} />
-                        </div>
-                    ))}
-                </div>
+
             </div>
         </Layout>
     );

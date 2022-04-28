@@ -209,7 +209,7 @@ const UpdateProduct = ({ match }) => {
             className="alert alert-info"
             style={{ display: createdProduct ? "" : "none" }}
         >
-            <h2>{`${createdProduct}`} is updated!</h2>
+            <h2>{`${createdProduct}`} updated successfully!!</h2>
         </div>
     );
 
@@ -230,8 +230,8 @@ const UpdateProduct = ({ match }) => {
 
     return (
         <Layout
-            title="Add a new product"
-            description={`G'day ${user.name}, ready to add a new product?`}
+            title="Add new product"
+            description={`Hello ${user.name}!!`}
         >
             <div className="row">
                 <div className="col-md-8 offset-md-2">
