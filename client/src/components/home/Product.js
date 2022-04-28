@@ -5,7 +5,6 @@ import Card from "./Card";
 
 const Product = props => {
     const [product, setProduct] = useState({});
-    const [relatedProduct, setRelatedProduct] = useState([]);
     const [error, setError] = useState(false);
 
     const loadSingleProduct = productId => {
@@ -34,7 +33,7 @@ const Product = props => {
             className="container-fluid"
         >
             <div className="row">
-                <div className="col-8">
+                <div className="col-8 pic-container">
                     {product && product.description && (
                         <Card product={product} showViewProductButton={false} />
                     )}

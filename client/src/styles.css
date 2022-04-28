@@ -95,6 +95,16 @@ p {
     .jumbotron h2 {
         margin-top: 10px;
     }
+
+    .pic {
+        max-width: 50px;
+        max-height: 100px;
+  
+    }
+    .pic-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /**

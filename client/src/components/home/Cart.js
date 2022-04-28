@@ -11,7 +11,6 @@ const Cart = () => {
   const [run, setRun] = useState(false);
  
   useEffect(() => {
-    console.log('MAX DEPTH ...');
     setItems(getCart());
   }, [run]);
  
@@ -44,7 +43,7 @@ const Cart = () => {
   );
  
   return (
-    <Layout title="Shopping Cart" description="Checkout now!" className="container-fluid">
+    <Layout title="Shopping Cart" description="Checkout" className="container-fluid">
       <div className="row">
         <div className="col-6">{items.length > 0 ? showItems(items) : noItemsMessage()}</div>
         <div className="col-6">

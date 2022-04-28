@@ -83,7 +83,7 @@ const Search = () => {
                 <div className="input-group input-group-lg">
                     <div className="input-group-prepend">
                         <select
-                            className="btn mr-2"
+                            className="btn btn-secondary mr-2"
                             onChange={handleChange("category")}
                         >
                             <option value="All">All</option>
@@ -103,10 +103,10 @@ const Search = () => {
                     />
                 </div>
                 <div
-                    className="btn input-group-append"
+                    className="btn btn-secondary input-group-append"
                     style={{ border: "none" }}
                 >
-                    <button className="input-group-text">Search</button>
+                    <button className="input-group-text btn-success">Search</button>
                 </div>
             </span>
         </form>
