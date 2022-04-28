@@ -144,7 +144,7 @@ const UpdateProduct = ({ match }) => {
                 <label className="text-muted">Price</label>
                 <input
                     onChange={handleChange("price")}
-                    type="number"
+                    type="integer"
                     className="form-control"
                     value={price}
                 />
@@ -227,7 +227,7 @@ const UpdateProduct = ({ match }) => {
 
     return (
         <Layout
-            title="Add new product"
+            title="Update product"
             description={`Hello ${user.name}!!`}
         >
             <div className="row">
