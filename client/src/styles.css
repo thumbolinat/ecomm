@@ -9,13 +9,13 @@
 }
 
 .nav-link {
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 3px black;
     font-weight: bold;
 }
 
 h4, ul {
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgb(118, 0, 253);
+    text-shadow: 1px 1px 2px rgb(152, 66, 249);
 }
 
 /* cart badge */
@@ -75,7 +75,7 @@ p {
     text-shadow: 1px 1px 2px rgb(57, 2, 145);
 }
 
-.card,.input-group-text {
+.card,.input-group-text, .form-control {
     box-shadow: 3px 3px 8px black;
 
 }
