@@ -94,9 +94,9 @@ const Orders = () => {
     return (
         <Layout
             title="Orders"
-            description={`G'day ${
+            description={`Welcome ${
                 user.name
-            }, you can manage all the orders here`}
+            }, manage your orders`}
             className="container-fluid"
         >
             <div className="row">

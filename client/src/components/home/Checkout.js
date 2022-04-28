@@ -81,9 +81,10 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) => {
  
                         createOrder(userId, token, createOrderData)
                             .then(response => {
+                                console.log(response);
                                 emptyCart(() => {
                                     setRun(!run); 
-                                    console.log('payment success and empty cart');
+                                    console.log('payment success');
                                     setData({
                                         loading: false,
                                         success: true
@@ -115,7 +116,7 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) => {
                             onChange={handleAddress}
                             className="form-control"
                             value={data.address}
-                            placeholder="Type your delivery address here..."
+                            placeholder="Type address here..."
                         />
                     </div>
 
